@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.PrintStream;
 
 /**
@@ -5,19 +7,25 @@ import java.io.PrintStream;
  */
 public class Game {
     private PrintStream printStream;
+    private Grid grid;
+    private BufferedReader reader;
 
-    public Game(PrintStream printStream){
+    public Game(PrintStream printStream, BufferedReader reader, Grid grid){
         this.printStream = printStream;
+        this.reader = reader;
+        this.grid = grid;
     }
 
-    public void start() {
-        String emptyBoard = (" | | \n"
-                + "-----\n"
-                + " | | \n"
-                + "-----\n"
-                + " | | \n");
-        printStream.println(emptyBoard);
+    public void start() throws IOException {
+       grid.drawEmptyBoard();
+
         printStream.println("Please enter a number between 1 and 9");
+        grid.drawGameBoard();
+        String input = reader.readLine();
+        int inputNum = Integer.parseInt(input);
+        grid.drawGridWithInput(inputNum, "X");
+        grid.drawGameBoard();
+
     }
 
 
