@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import static org.mockito.Mockito.*;
 
@@ -41,10 +40,9 @@ public class GameTest {
         out = mock(PrintStream.class);
         grid = mock(Grid.class);
         reader = mock(BufferedReader.class);
-        positions= new ArrayList<String>(Arrays.asList(" ", " ", " ", " ", " ", " ", " ", " ", " "));
-        grid = new Grid(printStream, positions, reader);
-        Game game = new Game(out, reader,grid);
         when(reader.readLine()).thenReturn("1");
+        Game game = new Game(out, reader,grid);
+
         game.start();
         verify(grid).drawGridWithInput(1, "X");
 
