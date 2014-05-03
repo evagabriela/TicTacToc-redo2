@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -16,11 +17,17 @@ public class GameTest {
     private ArrayList<String> positions;
     private PrintStream printStream;
 
-    @Test
-    public void shouldDrawEmptyGridWhenGameStarts() throws IOException {
+    @Before
+    public void setUp(){
         out = mock(PrintStream.class);
         reader = mock(BufferedReader.class);
         grid = mock(Grid.class);
+
+    }
+
+    @Test
+    public void shouldDrawEmptyGridWhenGameStarts() throws IOException {
+        when(reader.readLine()).thenReturn("1");
         Game game = new Game(out, reader, grid);
         game.start();
         verify(grid).drawEmptyBoard();
@@ -28,8 +35,7 @@ public class GameTest {
 
     @Test
     public void shouldPromptUserToEnterAPosition() throws IOException {
-        out = mock(PrintStream.class);
-        grid = mock(Grid.class);
+        when(reader.readLine()).thenReturn("1");
         Game game = new Game(out, reader, grid);
         game.start();
         verify(out).println("Please enter a number between 1 and 9");
@@ -37,14 +43,9 @@ public class GameTest {
 
     @Test
     public void shouldRedrawBoardWithUserPositionOnceInput1() throws IOException {
-        out = mock(PrintStream.class);
-        grid = mock(Grid.class);
-        reader = mock(BufferedReader.class);
         when(reader.readLine()).thenReturn("1");
         Game game = new Game(out, reader,grid);
-
         game.start();
         verify(grid).drawGridWithInput(1, "X");
-
     }
 }
