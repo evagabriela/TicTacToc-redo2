@@ -48,4 +48,12 @@ public class GameTest {
         game.start();
         verify(grid).drawGridWithInput(1, "X");
     }
+
+    @Test
+    public void shouldRedrawBoardWithUserPositionOnceInput2() throws IOException {
+        when(reader.readLine()).thenReturn("2");
+        Game game = new Game(out, reader,grid);
+        game.start();
+        verify(grid).drawGridWithInput(2, "X");
+    }
 }
