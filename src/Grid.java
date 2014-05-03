@@ -40,7 +40,6 @@ public class Grid {
 
     public void drawGridWithInput(int positionMarker, String mark){
         positions.set(positionMarker - 1, mark);
-
     }
 
 

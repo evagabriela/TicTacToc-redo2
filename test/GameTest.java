@@ -66,4 +66,16 @@ public class GameTest {
         verify(grid).drawGridWithInput(1, "O");
     }
 
+ //    Location already taken
+//If either player moves into a cell that is already used, display the message, “Location already taken”
+// and prompt them to try again (repeat this until they make a valid move).
+
+    @Test
+    public void shouldDisplayMessageIfUserMovesInAlreadyTakenCell() throws IOException {
+        when(reader.readLine()).thenReturn("1").thenReturn("1");
+        Game game = new Game(out, reader, grid);
+        game.start();
+        verify(out).println("Location already taken");
+    }
+
 }

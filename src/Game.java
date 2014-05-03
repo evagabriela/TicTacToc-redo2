@@ -30,9 +30,9 @@ public class Game {
         grid.drawGridWithInput(inputNum2, "O");
         grid.drawGameBoard();
 
-
-
     }
+
+
 
 
 }
