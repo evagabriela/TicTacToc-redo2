@@ -13,6 +13,7 @@ public class GameTest {
     private PrintStream out;
     private Game game;
     private BufferedReader reader;
+    private Grid grid;
 
     @Test
     public void shouldDrawEmptyGridWhenGameStarts() throws IOException {
@@ -26,8 +27,6 @@ public class GameTest {
                 + " | | \n");
     }
 
-//    Make a move
-// Redraw the board with an ‘X’ in that location.
     @Test
     public void shouldPromptUserToEnterAPosition(){
         out = mock(PrintStream.class);
@@ -39,15 +38,12 @@ public class GameTest {
     @Test
     public void shouldRedrawBoardWithUserPositionInput() throws IOException {
         out = mock(PrintStream.class);
+        grid = mock(Grid.class);
         reader = mock(BufferedReader.class);
         when(reader.readLine()).thenReturn("1");
         Game game = new Game(out);
         game.start();
-        verify(out).println(" X| | \n"
-                + "-----\n"
-                + " | | \n"
-                + "-----\n"
-                + " | | \n");
+        verify(grid).drawGrid(1, "X");
     }
 
 }
