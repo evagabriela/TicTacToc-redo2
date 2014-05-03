@@ -57,9 +57,6 @@ public class GameTest {
         verify(grid).drawGridWithInput(2, "X");
     }
 
-//    Player 2 move
-// Redraw the board with an ‘O’ in that location (and still draw player 1’s ‘X’).
-// It doesn’t matter what you do if they enter the same location that player 1 did.
 
     @Test
     public void shouldRedrawBoardWithSecondUserInput1WithMarkO() throws IOException {
@@ -67,7 +64,6 @@ public class GameTest {
         Game game = new Game (out,reader,grid);
         game.start();
         verify(grid).drawGridWithInput(1, "O");
-
     }
 
 }

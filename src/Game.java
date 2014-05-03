@@ -23,8 +23,14 @@ public class Game {
         grid.drawGameBoard();
         String input = reader.readLine();
         int inputNum = Integer.parseInt(input);
+
         grid.drawGridWithInput(inputNum, "X");
         grid.drawGameBoard();
+//        String input2 = reader.readLine();
+        int inputNum2 = Integer.parseInt(input);
+        grid.drawGridWithInput(inputNum2, "O");
+
+
 
     }
 
