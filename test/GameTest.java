@@ -42,7 +42,7 @@ public class GameTest {
     }
 
     @Test
-    public void shouldRedrawBoardWithUserPositionOnceInput1() throws IOException {
+    public void shouldRedrawBoardWithUserPositionOnceInput1withMarkX() throws IOException {
         when(reader.readLine()).thenReturn("1");
         Game game = new Game(out, reader,grid);
         game.start();
@@ -56,4 +56,18 @@ public class GameTest {
         game.start();
         verify(grid).drawGridWithInput(2, "X");
     }
+
+//    Player 2 move
+// Redraw the board with an ‘O’ in that location (and still draw player 1’s ‘X’).
+// It doesn’t matter what you do if they enter the same location that player 1 did.
+
+    @Test
+    public void shouldRedrawBoardWithSecondUserInput1WithMarkO() throws IOException {
+        when(reader.readLine()).thenReturn("1");
+        Game game = new Game (out,reader,grid);
+        game.start();
+        verify(grid).drawGridWithInput(1, "O");
+
+    }
+
 }
