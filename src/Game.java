@@ -1,24 +1,21 @@
 import java.io.PrintStream;
 
-
-
 /**
  * Created by gzamudio on 5/3/14.
  */
 public class Game {
-
-    private final PrintStream printStream;
+    private PrintStream printStream;
 
     public Game(PrintStream printStream){
         this.printStream = printStream;
     }
 
     public void start() {
-        printStream.println(" | | \n"
+        String emptyBoard = (" | | \n"
                 + "-----\n"
                 + " | | \n"
                 + "-----\n"
                 + " | | \n");
-
+        printStream.println(emptyBoard);
     }
 }
