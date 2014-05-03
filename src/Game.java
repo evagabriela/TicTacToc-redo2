@@ -1,5 +1,7 @@
 import java.io.PrintStream;
 
+
+
 /**
  * Created by gzamudio on 5/3/14.
  */
@@ -12,6 +14,11 @@ public class Game {
     }
 
     public void start() {
+        printStream.println(" | | \n"
+                + "-----\n"
+                + " | | \n"
+                + "-----\n"
+                + " | | \n");
 
     }
 }
