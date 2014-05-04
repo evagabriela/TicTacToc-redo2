@@ -25,6 +25,7 @@ public class Game {
 
     }
 
+
     public void getUserInput() throws IOException {
 
        String marker = null;
@@ -32,12 +33,12 @@ public class Game {
             String input=  reader.readLine() ;
             int inputNum = Integer.parseInt(input);
 
-
             if (inputNum % 2 == 0){
                 marker = "O";
             }else {
                 marker = "X";
             }
+
             if(grid.isPositionTaken(inputNum)){
                 grid.positionTakenMessage();
                 grid.drawGameBoard();

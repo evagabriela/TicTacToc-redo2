@@ -44,14 +44,23 @@ public class GameTest {
     @Test
     public void shouldRedrawBoardWithUserPositionOnceInput1withMarkX() throws IOException {
         when(reader.readLine()).thenReturn("1");
+        when(grid.isNotFull()).thenReturn(true).thenReturn(false);
+
+        when(grid.isPositionTaken(1)).thenReturn(false);
+
         Game game = new Game(out, reader,grid);
-        game.start();
+        game.getUserInput();
         verify(grid).drawGridWithInput(1, "X");
     }
 
+
+
     @Test
-    public void shouldReDrawBoardWithSecondUserInput1WithMarkO() throws IOException {
+    public void shouldReDrawBoardWithSecondUserInput2WithMarkO() throws IOException {
         when(reader.readLine()).thenReturn("1").thenReturn("2");
+        when(grid.isNotFull()).thenReturn(true).thenReturn(true).thenReturn(false);
+
+        when(grid.isPositionTaken(1)).thenReturn(false);
         Game game = new Game (out,reader,grid);
         game.start();
         verify(grid).drawGridWithInput(1, "X");
@@ -61,13 +70,14 @@ public class GameTest {
     @Test
     public void shouldDisplayMessageIfUserMovesInAlreadyTakenCell() throws IOException {
         when(reader.readLine()).thenReturn("1").thenReturn("1");
+        when(grid.isNotFull()).thenReturn(true).thenReturn(false);
+
+        when(grid.isPositionTaken(1)).thenReturn(true);
+
         Game game = new Game(out, reader,grid);
         game.start();
         verify(grid).positionTakenMessage();
     }
-
-
-
 
 
 }

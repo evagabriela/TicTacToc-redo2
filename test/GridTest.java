@@ -57,6 +57,12 @@ public class GridTest {
         assertFalse(grid.isPositionTaken(location));
     }
 
+//    display the message, “Game is a draw” when game is done .
+//    @Test
+//    public void shouldDisplayMessageWhenGridIsFull(){
+//
+//        verify(grid).isNotFull();
+//    }
 
 
 }
