@@ -49,15 +49,6 @@ public class GameTest {
         verify(grid).drawGridWithInput(1, "X");
     }
 
-//    @Test
-//    public void shouldRedrawBoardWithUserPositionOnceInput2() throws IOException {
-//        when(reader.readLine()).thenReturn("2");
-//        Game game = new Game(out, reader,grid);
-//        game.start();
-//        verify(grid).drawGridWithInput(2, "X");
-//    }
-
-
     @Test
     public void shouldReDrawBoardWithSecondUserInput1WithMarkO() throws IOException {
         when(reader.readLine()).thenReturn("1").thenReturn("2");
@@ -66,13 +57,6 @@ public class GameTest {
         verify(grid).drawGridWithInput(1, "X");
         verify(grid).drawGridWithInput(2, "O");
     }
-
-
-
-    //    Location already taken
-//If either player moves into a cell that is already used, display the message, “Location already taken”
-// and prompt them to try again (repeat this until they make a valid move).
-
 
     @Test
     public void shouldDisplayMessageIfUserMovesInAlreadyTakenCell() throws IOException {

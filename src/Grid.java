@@ -48,5 +48,9 @@ public class Grid {
         printStream.println("Location was already taken");
     }
 
+    public boolean isNotFull() {
+        return (positions.contains(" "));
+    }
+
 
 }

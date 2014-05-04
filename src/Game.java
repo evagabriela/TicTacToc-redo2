@@ -21,20 +21,32 @@ public class Game {
 
         printStream.println("Please enter a number between 1 and 9");
         grid.drawGameBoard();
-        String input = reader.readLine();
-        int inputNum = Integer.parseInt(input);
+        getUserInput();
 
-        grid.drawGridWithInput(inputNum, "X");
-        grid.drawGameBoard();
-        String input2 = reader.readLine();
-        int inputNum2 = Integer.parseInt(input2);
+    }
 
-        if (inputNum == inputNum2){
-            grid.positionTakenMessage();
+    public void getUserInput() throws IOException {
+
+       String marker = null;
+        while(grid.isNotFull()){
+            String input=  reader.readLine() ;
+            int inputNum = Integer.parseInt(input);
+
+            if (inputNum % 2 == 0){
+                marker = "O";
+            }else {
+                marker = "X";
+            }
+
+            grid.drawGridWithInput(inputNum, marker);
+            grid.drawGameBoard();
         }
+//
+//        if (inputNum == inputNum2){
+//            grid.positionTakenMessage();
+//        }
 
-        grid.drawGridWithInput(inputNum2, "O");
-        grid.drawGameBoard();
+
     }
 
 
