@@ -71,6 +71,7 @@ public class Grid {
             if (first.equals(second) && first.equals(third) && !first.equals(" ")) {
                 return true;
             }
+
         }
 
         // Diagonal Check
@@ -80,6 +81,7 @@ public class Grid {
 
         if (first.equals(second) && first.equals(third) && !first.equals(" ")) {
             return true;
+
         }
 
         first= positions.get(2);
@@ -98,6 +100,7 @@ public class Grid {
             if (first.equals(second) && first.equals(third) && !first.equals(" ")) {
                 return true;
             }
+
         }
 
 
@@ -109,5 +112,9 @@ public class Grid {
     }
 
     public void winnerMessage() {
+        if (threeInARow()){
+            printStream.println("Player <#> Wins!");
+        }
+
     }
 }

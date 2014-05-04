@@ -77,6 +77,7 @@ public class GridTest {
 
     @Test
     public void shouldDisplayMessageIfTrue(){
+        positions= new ArrayList<String>(Arrays.asList("X", "X", "X", " ", " ", " ", " ", " ", " "));
         Grid grid = new Grid(out, positions);
         grid.winnerMessage();
         verify(out).println("Player <#> Wins!");
