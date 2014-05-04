@@ -47,8 +47,10 @@ public class Game {
             } else {
                 grid.drawGridWithInput(inputNum, marker);
                 grid.drawGameBoard();
+
             }
         }
+        grid.fullGridMessage();
 
     }
 
