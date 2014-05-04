@@ -42,6 +42,12 @@ public class Grid {
         positions.set(positionMarker - 1, mark);
     }
 
+    public boolean isPositionTaken(int position) {
+        return !(positions.get(position - 1).equals(" "));
+
+    }
+
+
 
 
 }
