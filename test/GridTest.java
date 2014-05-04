@@ -66,7 +66,6 @@ public class GridTest {
     }
 
     //Winner!
-//After each move if that player has three in a row, end the game
 // and display the message, “Player <#> Wins!”
 
     @Test
