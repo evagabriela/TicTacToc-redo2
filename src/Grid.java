@@ -1,4 +1,3 @@
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -10,13 +9,11 @@ public class Grid {
 
     private ArrayList<String> positions;
     private PrintStream printStream;
-    private BufferedReader reader;
 
 
-    public Grid(PrintStream printStream, ArrayList<String> positions, BufferedReader reader){
+    public Grid(PrintStream printStream, ArrayList<String> positions){
         this.printStream = printStream;
         this.positions = positions;
-        this.reader = reader;
     }
 
     public void drawEmptyBoard() {

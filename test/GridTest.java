@@ -32,7 +32,7 @@ public class GridTest {
     @Test
 
     public void shouldDisplayEmptyBoard(){
-        Grid grid = new Grid( out, positions, reader);
+        Grid grid = new Grid( out, positions);
         grid.drawEmptyBoard();
         verify(out).println(" | | \n"
                 + "-----\n"
@@ -43,19 +43,17 @@ public class GridTest {
 
     @Test
     public void shouldReturnTrueIfPositionAlreadyTaken() throws IOException {
-        when(reader.readLine()).thenReturn("1");
-        Grid grid = new Grid(printStream, positions, reader);
+        positions= new ArrayList<String>(Arrays.asList("X", " ", " ", " ", " ", " ", " ", " ", " "));
+        Grid grid = new Grid(printStream, positions);
         int location = 1;
-        game.start();
         assertTrue(grid.isPositionTaken(location));
     }
 
     @Test
     public void shouldReturnFalseIfPositionIsNotTaken() throws IOException {
-        when(reader.readLine()).thenReturn("1");
-        Grid grid = new Grid(printStream, positions, reader);
+        positions= new ArrayList<String>(Arrays.asList("X", " ", " ", " ", " ", " ", " ", " ", " "));
+        Grid grid = new Grid(printStream, positions);
         int location = 3;
-        game.start();
         assertFalse(grid.isPositionTaken(location));
     }
 

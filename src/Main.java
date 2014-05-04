@@ -13,7 +13,7 @@ public class Main {
         PrintStream out = System.out;
         BufferedReader reader = new BufferedReader((new InputStreamReader(System.in)));
         ArrayList<String> positions = new ArrayList<String>(Arrays.asList(" ", " ", " ", " ", " ", " ", " ", " ", " "));
-        Grid grid = new Grid(out, positions, reader);
+        Grid grid = new Grid(out, positions);
         Game game = new Game(out, reader, grid);
 	    game.start();
     }
