@@ -54,6 +54,6 @@ public class Grid {
 
 
     public void fullGridMessage() {
-        printStream.println("Something");
+        printStream.println("Game is a draw");
     }
 }
