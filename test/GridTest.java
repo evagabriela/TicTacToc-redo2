@@ -30,12 +30,23 @@ public class GridTest {
     }
 
     @Test
+
+    public void shouldDisplayEmptyBoard(){
+        Grid grid = new Grid( out, positions, reader);
+        grid.drawEmptyBoard();
+        verify(out).println(" | | \n"
+                + "-----\n"
+                + " | | \n"
+                + "-----\n"
+                + " | | \n" );
+    }
+
+    @Test
     public void shouldReturnTrueIfPositionAlreadyTaken() throws IOException {
         when(reader.readLine()).thenReturn("1");
         Grid grid = new Grid(printStream, positions, reader);
         int location = 1;
-        String marker = "X";
-        grid.drawGridWithInput(location, marker);
+        game.start();
         assertTrue(grid.isPositionTaken(location));
     }
 
@@ -44,20 +55,10 @@ public class GridTest {
         when(reader.readLine()).thenReturn("1");
         Grid grid = new Grid(printStream, positions, reader);
         int location = 3;
+        game.start();
         assertFalse(grid.isPositionTaken(location));
     }
 
-    //    Location already taken
-//If either player moves into a cell that is already used, display the message, “Location already taken”
-// and prompt them to try again (repeat this until they make a valid move).
 
-
-    @Test
-    public void shouldDisplayMessageIfUserMovesInAlreadyTakenCell() throws IOException {
-        when(reader.readLine()).thenReturn("1");
-        Grid grid = new Grid( out, positions, reader);
-        grid.isPositionTaken(1);
-        verify(out).println("Location already taken");
-    }
 
 }

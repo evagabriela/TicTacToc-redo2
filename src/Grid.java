@@ -39,7 +39,7 @@ public class Grid {
     }
 
     public void drawGridWithInput(int positionMarker, String mark){
-        positions.set(positionMarker - 1, mark);
+            positions.set(positionMarker - 1, mark);
     }
 
     public boolean isPositionTaken(int position) {
@@ -47,7 +47,9 @@ public class Grid {
 
     }
 
-
+    public void positionTakenMessage() {
+        printStream.println("Location was already taken");
+    }
 
 
 }
