@@ -53,4 +53,7 @@ public class Grid {
     }
 
 
+    public void fullGridMessage() {
+        printStream.println("Something");
+    }
 }
