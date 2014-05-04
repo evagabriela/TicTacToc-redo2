@@ -28,6 +28,11 @@ public class Game {
         grid.drawGameBoard();
         String input2 = reader.readLine();
         int inputNum2 = Integer.parseInt(input2);
+
+        if (inputNum == inputNum2){
+            grid.positionTakenMessage();
+        }
+
         grid.drawGridWithInput(inputNum2, "O");
         grid.drawGameBoard();
     }
