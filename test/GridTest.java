@@ -20,10 +20,6 @@ public class GridTest {
     private PrintStream printStream;
 
 
-    //    Location already taken
-//If either player moves into a cell that is already used, display the message, “Location already taken”
-// and prompt them to try again (repeat this until they make a valid move).
-
     @Before
 
     public void setUp(){
@@ -50,13 +46,18 @@ public class GridTest {
         int location = 3;
         assertFalse(grid.isPositionTaken(location));
     }
-    
 
-//    public void shouldDisplayMessageIfUserMovesInAlreadyTakenCell() throws IOException {
-//        when(reader.readLine()).thenReturn("1");
-////        Grid grid = new Grid( out, positions, reader);
-//        grid.isPositionTaken(1);
-//        verify(out).println("Location already taken");
-//    }
+    //    Location already taken
+//If either player moves into a cell that is already used, display the message, “Location already taken”
+// and prompt them to try again (repeat this until they make a valid move).
+
+
+    @Test
+    public void shouldDisplayMessageIfUserMovesInAlreadyTakenCell() throws IOException {
+        when(reader.readLine()).thenReturn("1");
+        Grid grid = new Grid( out, positions, reader);
+        grid.isPositionTaken(1);
+        verify(out).println("Location already taken");
+    }
 
 }

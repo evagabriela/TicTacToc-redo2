@@ -27,10 +27,10 @@ public class Game {
         grid.drawGridWithInput(inputNum, "X");
         grid.drawGameBoard();
         String input2 = reader.readLine();
-//        int inputNum2 = Integer.parseInt(input2);
-//
-//        grid.drawGridWithInput(inputNum2, "O");
-//        grid.drawGameBoard();
+        int inputNum2 = Integer.parseInt(input2);
+
+        grid.drawGridWithInput(inputNum2, "O");
+        grid.drawGameBoard();
     }
 
 
