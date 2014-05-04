@@ -32,20 +32,22 @@ public class Game {
             String input=  reader.readLine() ;
             int inputNum = Integer.parseInt(input);
 
+
             if (inputNum % 2 == 0){
                 marker = "O";
             }else {
                 marker = "X";
             }
-
-            grid.drawGridWithInput(inputNum, marker);
-            grid.drawGameBoard();
+            if(grid.isPositionTaken(inputNum)){
+                grid.positionTakenMessage();
+                grid.drawGameBoard();
+                getUserInput();
+                break;
+            } else {
+                grid.drawGridWithInput(inputNum, marker);
+                grid.drawGameBoard();
+            }
         }
-//
-//        if (inputNum == inputNum2){
-//            grid.positionTakenMessage();
-//        }
-
 
     }
 
