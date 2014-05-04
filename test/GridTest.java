@@ -65,8 +65,6 @@ public class GridTest {
         verify(out).println("Game is a draw");
     }
 
-    //Winner!
-// and display the message, “Player <#> Wins!”
 
     @Test
     public void shouldReturnTrueIfThreeInARow(){
@@ -78,9 +76,10 @@ public class GridTest {
     @Test
     public void shouldDisplayMessageIfTrue(){
         positions= new ArrayList<String>(Arrays.asList("X", "X", "X", " ", " ", " ", " ", " ", " "));
+        String mark = "X";
         Grid grid = new Grid(out, positions);
         grid.winnerMessage();
-        verify(out).println("Player <#> Wins!");
+        verify(out).println("Player " + mark +  " Wins!");
     }
 
 

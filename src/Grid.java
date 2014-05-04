@@ -103,9 +103,7 @@ public class Grid {
 
         }
 
-
-
-        // None of the checks worked
+        // None worked
         return false;
 
 
@@ -115,6 +113,5 @@ public class Grid {
         if (threeInARow()){
             printStream.println("Player <#> Wins!");
         }
-
     }
 }
