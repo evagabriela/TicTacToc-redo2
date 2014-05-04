@@ -9,7 +9,8 @@ import java.util.Arrays;
 
 import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 public class GridTest {
     private BufferedReader reader;
@@ -62,9 +63,19 @@ public class GridTest {
         Grid grid = new Grid(out, positions);
         grid.fullGridMessage();
         verify(out).println("Game is a draw");
-
-
     }
+
+    //Winner!
+//After each move if that player has three in a row, end the game
+// and display the message, “Player <#> Wins!”
+
+    @Test
+    public void shouldReturnTrueIfThreeInARow(){
+        positions= new ArrayList<String>(Arrays.asList("X", "X", "X", " ", " ", " ", " ", " ", " "));
+        Grid grid = new Grid(printStream, positions);
+       assertTrue(grid.threeInARow());
+    }
+
 
 
 }

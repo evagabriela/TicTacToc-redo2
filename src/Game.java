@@ -51,7 +51,6 @@ public class Game {
             }
         }
         grid.fullGridMessage();
-
     }
 
 

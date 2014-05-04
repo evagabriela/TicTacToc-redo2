@@ -56,4 +56,8 @@ public class Grid {
     public void fullGridMessage() {
         printStream.println("Game is a draw");
     }
+
+    public boolean threeInARow() {
+        return true;
+    }
 }
