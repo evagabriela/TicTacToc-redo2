@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96dbb12d-620f-44cc-94ff-c618466810cf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/GameTest.java" afterPath="$PROJECT_DIR$/test/GameTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Grid.java" afterPath="$PROJECT_DIR$/src/Grid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/GridTest.java" afterPath="$PROJECT_DIR$/test/GridTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TicTacToc_redo2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +40,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-                  <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+                <state vertical-scroll-proportion="0.77319586" vertical-offset="0" max-vertical-offset="675">
+                  <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -59,7 +55,7 @@
           <file leaf-file-name="GameTest.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/GameTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="691" max-vertical-offset="1380">
+                <state vertical-scroll-proportion="0.0" vertical-offset="691" max-vertical-offset="1410">
                   <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -68,10 +64,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GridTest.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="GridTest.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/GridTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8268041" vertical-offset="424" max-vertical-offset="1005">
+                <state vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="1005">
                   <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -87,8 +83,8 @@
           <file leaf-file-name="GameTest.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/GameTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.77319586" vertical-offset="855" max-vertical-offset="1380">
-                  <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.5782074" vertical-offset="841" max-vertical-offset="1410">
+                  <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -99,10 +95,12 @@
           <file leaf-file-name="Grid.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Grid.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-                  <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="840">
+                  <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#1382#1383#0" expanded="true" />
+                    <element signature="e#1447#1448#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -124,10 +122,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Game.java" />
-        <option value="$PROJECT_DIR$/test/GameTest.java" />
         <option value="$PROJECT_DIR$/src/Grid.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/test/GridTest.java" />
+        <option value="$PROJECT_DIR$/test/GameTest.java" />
       </list>
     </option>
   </component>
@@ -243,7 +241,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GridTest.shouldReturnFalseIfPositionIsNotTaken">
+  <component name="RunManager" selected="JUnit.GameTest.shouldDisplayMessageIfUserMovesInAlreadyTakenCell">
     <configuration default="false" name="GridTest.shouldReturnTrueIfPositionAlreadyTaken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TicTacToc_redo2" />
@@ -252,29 +250,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GridTest" />
       <option name="METHOD_NAME" value="shouldReturnTrueIfPositionAlreadyTaken" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameTest.shouldPromptUserToEnterAPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TicTacToc_redo2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="shouldPromptUserToEnterAPosition" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -338,6 +313,29 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GridTest" />
       <option name="METHOD_NAME" value="shouldReturnFalseIfPositionIsNotTaken" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameTest.shouldDisplayMessageIfUserMovesInAlreadyTakenCell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TicTacToc_redo2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="METHOD_NAME" value="shouldDisplayMessageIfUserMovesInAlreadyTakenCell" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -541,18 +539,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.GridTest.shouldReturnTrueIfPositionAlreadyTaken" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest.shouldPromptUserToEnterAPosition" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.shouldReDrawBoardWithSecondUserInput1WithMarkO" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GridTest.shouldReturnFalseIfPositionIsNotTaken" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.shouldReDrawBoardWithSecondUserInput1WithMarkO" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GridTest.shouldReturnFalseIfPositionIsNotTaken" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.shouldDisplayMessageIfUserMovesInAlreadyTakenCell" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GridTest.shouldReturnFalseIfPositionIsNotTaken" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GridTest.shouldReturnTrueIfPositionAlreadyTaken" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.shouldReDrawBoardWithSecondUserInput1WithMarkO" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.shouldPromptUserToEnterAPosition" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest.shouldDisplayMessageIfUserMovesInAlreadyTakenCell" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.GridTest.shouldReturnFalseIfPositionIsNotTaken" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GridTest.shouldReturnTrueIfPositionAlreadyTaken" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.shouldReDrawBoardWithSecondUserInput1WithMarkO" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -562,12 +560,12 @@
       <changelist id="96dbb12d-620f-44cc-94ff-c618466810cf" name="Default" comment="" />
       <created>1399141731844</created>
       <updated>1399141731844</updated>
-      <workItem from="1399141734999" duration="17845000" />
+      <workItem from="1399141734999" duration="18218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17845000" />
+    <option name="totallyTimeSpent" value="18218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="790" extended-state="6" />
@@ -593,7 +591,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27045768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15395284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -661,26 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="810">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="675">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
@@ -694,8 +672,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/GridTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8268041" vertical-offset="424" max-vertical-offset="1005">
+        <state vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="1005">
           <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="840">
+          <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77319586" vertical-offset="0" max-vertical-offset="675">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -704,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77319586" vertical-offset="855" max-vertical-offset="1380">
-          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5782074" vertical-offset="841" max-vertical-offset="1410">
+          <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

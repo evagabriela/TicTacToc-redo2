@@ -76,11 +76,13 @@ public class GameTest {
 
     @Test
     public void shouldDisplayMessageIfUserMovesInAlreadyTakenCell() throws IOException {
-        when(reader.readLine()).thenReturn("1");
-        int position = 1;
-        grid.isPositionTaken(position);
-        verify(grid).drawGridWithInput(position, "X");
+        when(reader.readLine()).thenReturn("1").thenReturn("1");
+        Game game = new Game(out, reader,grid);
+        game.start();
+        verify(grid).positionTakenMessage();
     }
+
+
 
 
 
