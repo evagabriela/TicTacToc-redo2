@@ -75,6 +75,13 @@ public class GridTest {
        assertTrue(grid.threeInARow());
     }
 
+    @Test
+    public void shouldDisplayMessageIfTrue(){
+        Grid grid = new Grid(out, positions);
+        grid.winnerMessage();
+        verify(out).println("Player <#> Wins!");
+    }
+
 
 
 }
